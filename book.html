@@ -1,0 +1,31 @@
+<html>
+<head>
+	<script type="text/javascript" src="http://lib.ivank.net/ivank.js"></script>
+	
+	<script type="text/javascript" src="js/Book.js"></script>
+	<script type="text/javascript" src="js/Model.js"></script>
+	<script type="text/javascript" src="js/View.js"></script>
+	<script type="text/javascript" src="js/Controller.js"></script>
+	<script type="text/javascript" src="js/Geom.js"></script>
+	
+	<script type="text/javascript">
+		function Go()
+		{
+			var width	= 480;
+			var height	= 640;
+			var pages	= [
+							"images/pic1.jpg",
+							"images/pic2.jpg",
+							"images/pic3.jpg",
+							"images/pic4.jpg",
+							"images/pic5.jpg",
+							"images/pic6.jpg",
+							"images/pic7.jpg",
+							"images/pic8.jpg"
+						];
+			var book = new Book("canv", width, height, pages);
+		}
+	</script>
+</head>
+<body onload="Go();"><canvas id="canv"></canvas></body>
+</html>
